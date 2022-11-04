@@ -1,0 +1,61 @@
+
+# Set color cycle
+# Set line style as well for black and white graphs
+# axes.prop_cycle : (cycler('markeredgecolor', ['k', 'r', 'b', 'g']) + cycler('ls', ['-', '--', ':', '-.'])) cycler('ls', [' ', ' ', ' ', ' ', ' ', ' ', ' ']))
+
+
+lines.linewidth : 1.0 #1.5
+# Set markers (style, color, no lines) blue '0C5DA5', green '00B945', yellow 'FF9500', red 'FF2C00', violet '845B97', gray '474747'
+axes.prop_cycle : (cycler('ls', ['-', '--', ':', '-.', '-', '--', ':']) + cycler('color', ['444444', 'blue', '00B945', '8700af', '5f7800', 'd70087', 'a30013'])) # + (cycler('marker', ['o', '.', '+', 'x', 's', '<', '>']) + cycler('mfc', ['orange', 'red', 'violet', 'blue', '5f7800', 'yellow', 'a30013']))
+#lines.markeredgecolor: green
+#lines.markeredgewidth: 1.0 
+lines.markersize: 3 # scatter
+
+
+
+# Set default figure size
+figure.figsize : 6.28, 3.14   #3.3, 2.5 # 3.5, 2.625
+
+figure.dpi : 100
+savefig.dpi: 200
+
+# Font sizes
+font.size : 10
+axes.titlesize : 11
+legend.fontsize: 10 # 8
+#legend.title_fontsize : 8
+legend.labelcolor : 444444
+legend.frameon : False
+
+axes.labelsize: 10
+
+xtick.labelsize: 8 # 7
+ytick.labelsize: 8 # 7 
+
+
+
+# Font Family  (# serif # font.serif : Times # dejavuserif )
+font.family: CMU Serif   # CMU Typewriter Text #Latin Modern Sans #Times New Roman # sans-serif 
+#font.sans-serif: DejaVu Sans, Arial, Helvetica, Lucida Grande, Verdana, Geneva, Lucid, Avant Garde, sans-serif
+ 
+# Latex with sans-serif fonts  
+mathtext.fontset : cm
+
+
+
+
+# Set line widths
+axes.linewidth : 0.5
+grid.linewidth : 0.5
+
+
+# Always save as 'tight'
+savefig.bbox : tight
+savefig.pad_inches : 0.05  # Use virtually all space when we specify figure dimensions
+
+
+
+# Use LaTeX for math formatting
+text.usetex : False
+# Add LaTeX package to allow PGF plots
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath} \usepackage[T1]{fontenc} \usepackage{pgfplots}
